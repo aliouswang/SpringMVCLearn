@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.aliouswang.model.User;
+import com.aliouswang.service.UserService;
 import com.aliouswang.service.UserServiceImpl;
 
 @Controller
 public class UserController {
 	
-	@Resource
-	private UserServiceImpl userService;
+	@Autowired
+	private UserService userService;
 	
 	@RequestMapping("/userList")
 	public @ResponseBody List<User> getUserList() {

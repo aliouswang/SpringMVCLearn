@@ -8,12 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.aliouswang.dao.UserDao;
+import com.aliouswang.dao.UserDaoImpl;
 import com.aliouswang.model.User;
 
 @Service
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService{
 	
-	@Resource
+	@Autowired
 	UserDao userDao;
 	
 	public List<User> findAllUsers() {

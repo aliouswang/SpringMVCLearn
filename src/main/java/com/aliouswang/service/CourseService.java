@@ -3,7 +3,7 @@ package com.aliouswang.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.aliouswang.dao.UserDao;
+import com.aliouswang.dao.UserDaoImpl;
 import com.aliouswang.model.Course;
 
 @Service
